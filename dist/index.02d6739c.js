@@ -435,39 +435,7 @@ const showRecipe = async function() {
 };
 showRecipe();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"kcMTN","url:../img/icons.svg":"gkpIa","core-js/stable":"d8roq","regenerator-runtime/runtime":"aijgg"}],"kcMTN":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule') return;
-        // Skip duplicate re-exports when they have the same value.
-        if (key in dest && dest[key] === source[key]) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"gkpIa":[function(require,module,exports) {
+},{"url:../img/icons.svg":"gkpIa","core-js/stable":"d8roq","regenerator-runtime/runtime":"aijgg","@parcel/transformer-js/src/esmodule-helpers.js":"kcMTN"}],"gkpIa":[function(require,module,exports) {
 module.exports = require('./bundle-url').getBundleURL() + "icons.c7300c21.svg";
 
 },{"./bundle-url":"kGdAt"}],"kGdAt":[function(require,module,exports) {
@@ -12268,6 +12236,38 @@ try {
     // problems, please detail your unique predicament in a GitHub issue.
     Function("r", "regeneratorRuntime = r")(runtime);
 }
+
+},{}],"kcMTN":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule') return;
+        // Skip duplicate re-exports when they have the same value.
+        if (key in dest && dest[key] === source[key]) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["iX5x9","kh7kD"], "kh7kD", "parcelRequire3a11")
 
